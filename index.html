@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharanya Courier Service - Fast, Reliable & Global Logistics</title>
+  <meta name="description" content="Sharanya Courier Service provides door-to-door express parcel delivery, domestic & international air cargo, hyperlocal same-day delivery, and live 3D parcel tracking across India.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo/sharanya-logo.svg" alt="Sharanya Courier Service Logo">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="track.html" class="nav-link">Track Shipment</a>
+        <a href="quote.html" class="nav-link">Get Quote</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="track.html" class="btn btn-primary btn-sm">
+          <span>Track Parcel</span> ➔
+        </a>
+        <button class="hamburger" aria-label="Toggle Mobile Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="track.html" class="nav-link">Track Shipment</a>
+      <a href="quote.html" class="nav-link">Get Quote</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <a href="quote.html" class="btn btn-primary btn-lg">Calculate Rates Now</a>
+  </div>
+
+  <!-- ==================== HERO SECTION WITH 3D VISUALIZER ==================== -->
+  <section class="hero-section">
+    <div class="hero-bg-patterns"></div>
+    <div class="road-grid"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text & Quick Track Form -->
+        <div class="hero-content">
+          <div class="badge-tag">
+            <span style="font-size: 1.1rem;">⚡</span> Next-Gen Smart Logistics & Express Air Freight
+          </div>
+
+          <h1 class="hero-title">
+            Fast, Reliable & <span>Global Courier</span> Network
+          </h1>
+
+          <p class="hero-desc">
+            Empowering businesses and individuals with door-to-door express delivery, real-time IoT parcel tracking, and seamless air & surface cargo solutions across 500+ cities.
+          </p>
+
+          <!-- Quick Track Input Overlay -->
+          <div class="hero-track-box">
+            <form action="track.html" method="GET" class="track-form-inline">
+              <input type="text" name="id" placeholder="Enter Tracking ID (e.g. SCS-987654)" required />
+              <button type="submit" class="btn btn-primary">Track Now ➔</button>
+            </form>
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <span style="color:var(--accent-orange); font-size:1.2rem;">✓</span> Pan-India Delivery
+            </div>
+            <div class="hero-badge-item">
+              <span style="color:var(--accent-orange); font-size:1.2rem;">✓</span> Live GPS Status
+            </div>
+            <div class="hero-badge-item">
+              <span style="color:var(--accent-orange); font-size:1.2rem;">✓</span> 100% Zero Damage Guarantee
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Three.js Canvas -->
+        <div class="hero-3d-container">
+          <canvas id="three-hero-canvas"></canvas>
+          <div class="canvas-hint">
+            <span>🖱️ Drag to rotate 360° | Scroll to inspect</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LIVE STATS COUNTER BAR ==================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📦</div>
+          <div class="stat-number" data-target="1.5" data-suffix="M+" data-decimals="1">0</div>
+          <div class="stat-label">Parcels Delivered Annually</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">🏙️</div>
+          <div class="stat-number" data-target="520" data-suffix="+">0</div>
+          <div class="stat-label">Cities Covered Pan-India</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-number" data-target="99.8" data-suffix="%" data-decimals="1">0</div>
+          <div class="stat-label">On-Time Delivery Rate</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">🛡️</div>
+          <div class="stat-number" data-target="100" data-suffix="% Safe">0</div>
+          <div class="stat-label">Insured & Secure Transit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Why Choose Sharanya</span>
+        <h2 class="section-title">Built for Speed, Engineered for Trust</h2>
+        <p class="section-desc">We combine automated sorting infrastructure, smart GPS tracking, and a dedicated logistics fleet to ensure your consignment reaches its destination safely and swiftly.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🚀</div>
+          <h3 class="feature-title">Hyperfast Express Shipping</h3>
+          <p class="feature-desc">Same-day intracity and 24-hour intercity air express delivery options for time-critical documents and high-priority parcels.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">📍</div>
+          <h3 class="feature-title">Real-Time IoT Tracking</h3>
+          <p class="feature-desc">Monitor your shipment status every step of the way with live milestone scans, SMS alerts, and interactive route mapping.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🔒</div>
+          <h3 class="feature-title">Tamper-Proof Handling</h3>
+          <p class="feature-desc">Sealed cargo bins, OTP-verified delivery handoffs, and transit insurance options to protect high-value goods.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🌐</div>
+          <h3 class="feature-title">Global Air Cargo Gateway</h3>
+          <p class="feature-desc">Direct air freight connections to over 180 countries with seamless customs clearance and door-to-door import/export support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED SERVICES SHOWCASE ==================== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Logistics Spectrum</span>
+        <h2 class="section-title">Tailored Solutions for Every Consignment</h2>
+        <p class="section-desc">From individual express packages to large enterprise cargo, explore our end-to-end logistics offerings.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/fleet_truck.jpg" alt="Domestic Express Delivery">
+            <span class="service-tag">Popular</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Domestic Express Courier</h3>
+            <p class="service-desc">Door-to-door surface and air pickup across all major cities with guaranteed delivery SLAs and cash-on-delivery support.</p>
+            <a href="services.html" class="service-link">Learn Details ➔</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/air_cargo.jpg" alt="International Air Cargo">
+            <span class="service-tag">Global</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">International Air Cargo</h3>
+            <p class="service-desc">Express document & parcel delivery worldwide with fast customs clearance, duty calculation, and real-time flight tracking.</p>
+            <a href="services.html" class="service-link">Learn Details ➔</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/warehouse.jpg" alt="Automated Warehousing">
+            <span class="service-tag">B2B Cargo</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Smart Warehousing & 3PL</h3>
+            <p class="service-desc">Full-stack inventory storage, order pick-and-pack, temperature-controlled facilities, and e-commerce fulfillment integration.</p>
+            <a href="services.html" class="service-link">Learn Details ➔</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="services.html" class="btn btn-secondary btn-lg">Explore All Services ➔</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS CAROUSEL ==================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color:var(--accent-orange);">Client Feedback</span>
+        <h2 class="section-title" style="color:#FFF;">Trusted by Businesses & Millions of Customers</h2>
+      </div>
+
+      <div class="testimonial-card testimonial-card-dynamic">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section style="background: linear-gradient(90deg, #0B1F3A 0%, #1A3A68 100%); padding: 5rem 0; position: relative; overflow: hidden; color: #FFF;">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; position: relative; z-index: 2;">
+      <div>
+        <h2 style="font-size: 2.3rem; color: #FFF; margin-bottom: 0.5rem;">Ready to Dispatch Your Parcel?</h2>
+        <p style="color: var(--text-light-muted); font-size: 1.1rem;">Calculate instant rates or schedule a free home pickup in under 60 seconds.</p>
+      </div>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="quote.html" class="btn btn-primary btn-lg">Calculate Instant Rates</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/sharanya-logo.svg" alt="Sharanya Logo" style="height: 48px; filter: brightness(0) invert(1);">
+          <p>Sharanya Courier Service is a premier technology-driven logistics company providing nationwide express shipping, international air freight, and automated warehousing solutions.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">fb</a>
+            <a href="#" class="social-icon" aria-label="Twitter">tw</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Company</a>
+            <a href="services.html">Services Spectrum</a>
+            <a href="track.html">Track Shipment</a>
+            <a href="quote.html">Pricing Calculator</a>
+            <a href="gallery.html">Fleet Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Domestic Air Express</a>
+            <a href="services.html">International Cargo</a>
+            <a href="services.html">Hyperlocal Same-Day</a>
+            <a href="services.html">E-Commerce Logistics</a>
+            <a href="services.html">Cold Chain Storage</a>
+            <a href="services.html">B2B Heavy Freight</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter Signup</h4>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">Subscribe to get shipping rate alerts and tracking updates.</p>
+          <form data-toast="Subscribed to Sharanya Courier newsletter!" class="footer-newsletter">
+            <input type="email" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-primary" style="width:100%;">Subscribe ➔</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Sharanya Courier Service Pvt. Ltd. All rights reserved.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security & Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- JS Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/three-scene.js"></script>
+</body>
+</html>
